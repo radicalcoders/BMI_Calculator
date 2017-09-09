@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_1"
+        android:title="BMI CHART"
+        android:icon="@color/colorAccent"/>
+
+    <item
+        android:id="@+id/item_2"
+        android:title="HEALTH TIPS FOR UNDERWEIGHT"
+        android:icon="@color/colorAccent"/>
+
+    <item
+        android:id="@+id/item_3"
+        android:title="HEALTH TIPS FOR OVERWEIGHT"
+        android:icon="@color/colorAccent"/>
+
+    <item
+        android:id="@+id/item_4"
+        android:title="HEALTH TIPS FOR OBESE"
+        android:icon="@color/colorAccent"/>
+
+
+
+
+
+
+</menu>

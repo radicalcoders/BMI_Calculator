@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/unnamed"
+    tools:context="com.workshop.bmi_calculator.MainActivity">
+
+
+    <TextView
+        android:text="Select your gender"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#880E4F"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textAllCaps="true"/>
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textAllCaps="true"/>
+    </RadioGroup>
+
+    <TextView
+        android:text="Enter your weight"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#880E4F"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight_textview"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/kgs"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Kilograms"
+            android:textAllCaps="true"/>
+
+        <RadioButton
+            android:id="@+id/pounds"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Pounds"
+            android:textAllCaps="true"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter your weight"
+        android:textColorHint="#F44336"
+        android:background="@android:drawable/alert_light_frame"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/weight" />
+
+    <TextView
+        android:text="Enter your height"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#880E4F"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/height_textview"
+        android:layout_marginBottom="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/cms"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Centimetres"
+            android:textAllCaps="true"/>
+
+        <RadioButton
+            android:id="@+id/feet"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Feet"
+            android:textAllCaps="true"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter your height"
+        android:background="@android:drawable/alert_light_frame"
+        android:textColorHint="#6A1B9A"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/height" />
+
+    <Button
+        android:text="Calculate BMI"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        android:onClick="Click_me"/>
+
+
+
+
+</LinearLayout>
